@@ -5,31 +5,31 @@ This project is a Streamlit-based web application designed to help users find ac
 ## INSTALLATION INSTRUCTIONS -
 
 ### Step - 1 :-  Clone the Repository :
-git clone <repository-url>
-cd Academic-resource-finder
+`git clone <repository-url>
+cd Academic-resource-finder`
 
 ### Step - 2 :- Set Up a Virtual Environment (Optional but Recommended) :
 
 -> Create a virtual environment :
-python -m venv env
+`python -m venv env`
 
 -> Activate the virtual environment :
 
 For Windows :
-.\env\Scripts\activate
+`.\env\Scripts\activate`
 
 For macOS/Linux :
-source env/bin/activate
+`source env/bin/activate`
 
 ### Step - 3:- Install Dependencies :
 Install all the libraries and modules listed in requirements.txt
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### Step - 4:- Run the Application :
-streamlit run app.py
+`streamlit run app.py`
 
 ### Step - 5:- Access the Application :
-Open your web browser and navigate to the URL displayed in the terminal (usually http://localhost:8501).
+Open your web browser and navigate to the URL displayed in the terminal (usually `http://localhost:8501`).
 
 ## USAGE INSTRUCTIONS -
 
