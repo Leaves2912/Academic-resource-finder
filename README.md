@@ -6,7 +6,7 @@ INSTALLATION INSTRUCTIONS -
 
 Step - 1:-  Clone the Repository:
 git clone <repository-url>
-cd academic-resource-finder
+cd Academic-resource-finder
 
 Step - 2:- Set Up a Virtual Environment (Optional but Recommended) :
 
