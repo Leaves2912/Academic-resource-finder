@@ -1,8 +1,8 @@
-import re
 import requests
-import streamlit as st
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
+import re
+import streamlit as st
 
 st.markdown(
     """
@@ -141,6 +141,7 @@ def scrape_files(sub):
 
     return results
 
+
 # Streamlit UI
 if 'results_found' not in st.session_state:
     st.session_state.results_found = False
@@ -177,6 +178,7 @@ st.markdown(
 
 if not st.session_state.get('results_found', False):
     st.markdown("<h1 style='font-family: Times New Roman; font-size: 40px;'>Academic Resource Finder</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='font-family: Times New Roman; font-size: 25px;'>Academic Resource Finder is a tool that helps you quickly find study materials like PPTs, Word files, PDFs and many other useful materials on any topic. It makes it easier to access useful and reliable information for learning.</p>", unsafe_allow_html=True)
 
 # Input label with a line break
 st.sidebar.markdown('<div class="input-label">What would you<br>like to study today ?</div>', unsafe_allow_html=True)
