@@ -4,6 +4,7 @@ from urllib.parse import unquote
 import re
 import streamlit as st
 
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"}
 st.markdown(
     """
     <style>
@@ -16,7 +17,7 @@ st.markdown(
 )
 
 def get_source_with_scraping(url):
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
     return soup.prettify()  # Formatted HTML output
 
